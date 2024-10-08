@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>
+pdb
+</title>
+</head>
+<body bgcolor="rosybrown"><center>
+<h2>Prompt Dialogue Box</h2>
+<button onclick="myfun()"> try it </button>
+<p id="demo"></p>
+<script>
+function myfun()
+{
+var Name;
+var person=prompt("Your sweetest name please?","Ram");
+if (person==null||person=="")
+Name="User cancelled the prompt";
+else
+Name="Hello " + person + " How are you?";
+document.getElementById("demo").innerHTML=Name;
+}
+</script>
+</body>
+</html>
